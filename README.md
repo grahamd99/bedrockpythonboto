@@ -1,4 +1,4 @@
-# djangotest
+# README stuff
 Try out stuff
 
 ### to run 
@@ -7,12 +7,17 @@ Create the virtual environment
 `python -m venv venv`
 
 Activate virtual environment  
-`venv\Scripts\activate.bat`
-`./venv/Scripts/activate`
-`source venv/bin/activate`
+```
+venv\Scripts\activate.bat
+./venv/Scripts/activate
+source venv/bin/activate
+```
 
-Install Django  
-`pip install django`
+Create a .env file  
+```
+AWSPROFILE=123456_Admin
+REGION=eu-west-2
+```
 
-Run the server  
-`python mysite\manage.py runserver`
+Run the app to call Bedrock  
+`python callbedrock.py`
